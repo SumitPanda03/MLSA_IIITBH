@@ -100,7 +100,7 @@ const Upload = () => {
     try {
       // console.log("Before making POST request");
       const res = await axios.post(
-        "http://localhost:8005/uploads/register",
+        "https://mlsa-backend.onrender.com/uploads/register",
         formData,
         config
       );
