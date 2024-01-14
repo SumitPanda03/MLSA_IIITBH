@@ -3,17 +3,17 @@ import Lottie from "lottie-react";
 import ms1 from "../images/microsoft1.json";
 import ms2 from "../images/microsoft2.json";
 import "../CSS_files/Title.css";
-import Footer from "./Footer.jsx";
-import Navbar from "./Navbar.jsx";
+import Footer from "../components/Footer.jsx";
+import Navbar from "../components/Navbar.jsx";
 
 function Title() {
   return (
     <div>
       <Navbar />
       <div className="home-container container">
-        <div className="text-center">
+        <div className="text-center mt-5">
           <img
-            src="/assets/Zero-page/iiit_logo.png"
+            src="./assets/Zero-page/iiit_logo.png"
             className="title-logo"
             alt="iiit_logo"
           />

@@ -32,7 +32,7 @@ const Opening = () => {
           </a>
         </div>
       </nav> */}
-      <Navbar/>
+      <Navbar />
       <form className="opening">
         <input
           type="text"
@@ -48,9 +48,9 @@ const Opening = () => {
           required
           name="password"
           value={formData.password}
-          onChange={(e) => setFormData({password: e.target.value })}
+          onChange={(e) => setFormData({ password: e.target.value })}
         />
-        <button onClick={doLogin} type="button" >
+        <button onClick={doLogin} type="button">
           ENTER
         </button>
       </form>

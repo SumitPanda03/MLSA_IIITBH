@@ -2,18 +2,19 @@ import React from "react";
 import "../CSS_files/Navbar.css";
 import { AuthData } from "../auth/AuthWrapper";
 import { Link } from "react-router-dom";
+import logoImage from "../images/logo-navbar.png";
 
 function Navbar() {
-  const { user } = AuthData()
+  const { user } = AuthData();
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light nav-design fixed-top">
-        <Link
-          to="/home"
-          className="navbar-brand mx-3"
-          style={{ color: "white" }}
-        >
-          MLSA: IIIT - BBSR
+        <Link to="/home" className="navbar-brand mx-3">
+          <img
+            src={logoImage}
+            alt="MLSA: IIIT-Bh Chapter"
+            style={{ height: "53px", width: "auto" }}
+          />
         </Link>
         <button
           className="navbar-toggler"
@@ -52,7 +53,7 @@ function Navbar() {
                 className="nav-link"
                 style={{ color: "white" }}
               >
-                IIIT-BBSR Chapter
+                Members
               </Link>
             </li>
             <li className="nav-item">
@@ -61,7 +62,7 @@ function Navbar() {
                 className="nav-link"
                 style={{ color: "white" }}
               >
-                Upload
+                Admin
               </Link>
             </li>
           </ul>
