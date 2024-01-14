@@ -16,7 +16,7 @@ export default function Projects() {
   const [data, setData] = useState([]);
 
   const getUserData = async () => {
-    const res = await axios.get("https://mlsa-backend.onrender.com/uploads/getdata", {
+    const res = await axios.get("https://mlsa-iiit-bh.onrender.com/uploads/getdata", {
       headers: {
         "Content-Type": "application/json",
       },

@@ -6,6 +6,8 @@ const {
 } = require("@aws-sdk/client-s3");
 const { Upload } = require("@aws-sdk/lib-storage");
 const fs = require("fs");
+// const dotenv = require( 'dotenv');
+// dotenv.config();
 
 const s3Client = new S3Client({
     region: process.env.region,
