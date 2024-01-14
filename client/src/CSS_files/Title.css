@@ -1,0 +1,71 @@
+.text-center {
+        text-align: center;
+        margin-top: 20px;
+}
+
+.title-logo {
+        width: 150px;
+        height: auto;
+        margin-top: 8px;
+}
+
+@keyframes slide {
+        from {
+                transform: translateX(-20px);
+                opacity: 0;
+        }
+
+        to {
+                transform: translateX(0);
+                opacity: 1;
+        }
+}
+
+.sliding-box {
+        display: inline-block;
+        padding: 10px;
+        border: 2px solid #0078D4;
+        animation: slide 1s ease-in-out;
+}
+
+.animation-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+}
+
+.animation {
+        display: flex;
+}
+
+.animation-left,
+.animation-right {
+        width: 30%;
+}
+
+.animation-left {
+        margin-right: auto;
+}
+
+.animation-right {
+        margin-left: auto;
+        margin-top: 34px;
+}
+
+.button-container {
+        text-align: center;
+        margin-top: 20px;
+}
+
+.title-logo {
+        width: 150px;
+        height: auto;
+}
+
+.badge-logo {
+        margin-top: 10px;
+        width: 150px;
+        height: 135px;
+}

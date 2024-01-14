@@ -1,0 +1,217 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+.typed-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1%;
+}
+
+.description {
+        margin-top: 35px;
+        font-size: large;
+        font-family: 'Roboto', sans-serif;
+}
+
+.social {
+        display: flex;
+        align-items: center;
+}
+
+.title {
+        margin-top: 30px;
+}
+
+.bold-black {
+        font-weight: bold;
+        color: #000;
+}
+
+.social a {
+        text-decoration: none;
+        color: #000;
+        margin-right: 10px;
+}
+
+.social a:hover {
+        color: #0074E4;
+}
+
+.card {
+        width: 300px;
+        height: 400px;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: transform 0.5s, opacity 0.3s;
+        position: relative;
+        cursor: pointer;
+}
+
+.list-content {
+        font-weight: 600;
+}
+
+.card h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 24px;
+        font-weight: 300;
+}
+
+.card img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        margin-bottom: 10px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+}
+
+.card-title {
+        font-family: 'Roboto', sans-serif;
+}
+
+.typed-content {
+        text-align: center;
+        font-size: 40px;
+        height: 3.2rem;
+        color: #4b6cb7;
+        font-weight: bold;
+        margin: auto;
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+        .custom-arrow {
+                display: none;
+        }
+}
+
+@media screen and (max-width: 1020px) {
+        .typed-content {
+                font-size: 26px;
+                margin-top: 2rem;
+        }
+
+        .custom-arrow {
+                display: none;
+        }
+}
+
+@media screen and (max-width: 900px) {
+        .typed-content {
+                font-size: 26px;
+        }
+
+        .custom-arrow {
+                display: none;
+        }
+}
+
+@media screen and (max-width: 768px) {
+        .typed-content {
+                font-size: 24px;
+        }
+
+        .custom-arrow {
+                display: none;
+        }
+}
+
+@media screen and (max-width: 600px) {
+        .typed-content {
+                font-size: 25px;
+        }
+
+        .custom-arrow {
+                display: none;
+        }
+        .card img{
+                width: 250px;
+                height: 280px;
+        }
+}
+
+.card {
+        max-width: 100%;
+        width: 300px;
+        height: 400px;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        position: relative;
+}
+
+@media screen and (max-width: 420px) {
+        .typed-content {
+                font-size: 16px;
+        }
+        .description{
+                font-size: 14px;
+        }
+}
+
+@media screen and (max-width: 360px) {
+        .typed-content {
+                font-size: 14px;
+        }
+}
+
+@media screen and (max-width: 256px) {
+        .typed-content {
+                font-size: 12px;
+        }
+}
+
+.card.flipped {
+        transform: rotateY(180deg);
+}
+
+.card-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.3s;
+        margin-top: 3px;
+}
+
+.card-front {
+        transform: rotateY(0deg);
+}
+
+.card-back {
+        transform: rotateY(180deg);
+        opacity: 0;
+}
+
+.card:hover {
+        transform: rotateY(180deg);
+}
+
+.card:hover .card-front {
+        opacity: 0;
+}
+
+.card:hover .card-back {
+        opacity: 1;
+}
