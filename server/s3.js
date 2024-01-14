@@ -8,10 +8,10 @@ const { Upload } = require("@aws-sdk/lib-storage");
 const fs = require("fs");
 
 const s3Client = new S3Client({
-    region: "ap-south-1",
+    region: process.env.region,
     credentials: {
-        accessKeyId: "AKIAXX7KJXGNAKP7UDTB",
-        secretAccessKey: "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",
+        accessKeyId: process.env.accessKeyId,
+        secretAccessKey: process.env.secretAccessKey,
     },
 });
 
@@ -36,10 +36,10 @@ const s3Client = new S3Client({
 
 function getObjectURL(key) {
     // Replace "mlsa.bucket" with your actual S3 bucket name
-    const bucketName = "mlsa.bucket";
+    const bucketName = process.env.bucketName;
 
     // Replace "your-s3-region" with your actual AWS S3 region
-    const s3Region = "ap-south-1";
+    const s3Region =process.env.region;
 
     // Construct the public URL
     const url = `https://s3.${s3Region}.amazonaws.com/${bucketName}/uploads/${key}`;
@@ -51,8 +51,8 @@ console.log("URL S3", getObjectURL("image-1698501542310.LevelAlpha.png"));
 
 async function putObject(filename, contentType, url1) {
     // Replace "mlsa.bucket" with your actual S3 bucket name
-    const bucketName = "mlsa.bucket";
-    const s3Region = "ap-south-1";
+    const bucketName = process.env.bucketName
+    const s3Region = process.env.region;
 
     const params = {
         Bucket: bucketName,

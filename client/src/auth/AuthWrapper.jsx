@@ -16,7 +16,7 @@ export const AuthWrapper = () => {
           
           return new Promise((resolve, reject) => {
 
-               if (password === "letmein12345") {
+               if (password === process.env.pass) {
                     setUser({name: username, isAuthenticated: true})
                     resolve("success")
                } else {
