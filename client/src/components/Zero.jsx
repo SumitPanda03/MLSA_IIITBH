@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Lottie from "react-lottie";
 import animationData from "../images/Octo-Hello.json";
@@ -15,6 +15,15 @@ function Zero() {
   };
 
   const [isButtonHovered, setIsButtonHovered] = useState(false);
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowButton(true);
+    }, 2500);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   const backgroundStyle = {
     backgroundImage:
@@ -38,9 +47,11 @@ function Zero() {
     margin: "10px",
     border: "2px solid #ffffff",
     cursor: "pointer",
-    transition: "transform 0.2s, color 0.2s, box-shadow 0.2s",
+    transition: "transform 0.2s, color 0.2s, box-shadow 0.2s, opacity 1s", // Added opacity transition
     fontWeight: "bold",
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // Box shadow when not hovered
+    opacity: showButton ? 2 : 0, // Initial opacity
+    boxShadow: "4px 8px 8px rgba(255, 255, 0, 0.2)",
   };
 
   const buttonHoverStyle = {
@@ -59,7 +70,10 @@ function Zero() {
           as={Link}
           to="/home"
           variant="primary"
-          style={{ ...buttonStyle, ...(isButtonHovered && buttonHoverStyle) }}
+          style={{
+            ...buttonStyle,
+            ...(isButtonHovered && buttonHoverStyle),
+          }}
           onMouseEnter={() => setIsButtonHovered(true)}
           onMouseLeave={() => setIsButtonHovered(false)}
         >
