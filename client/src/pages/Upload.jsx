@@ -127,9 +127,9 @@ const Upload = () => {
       <div className="container my-5">
         <br />
         <br />
-        <h1>Upload Products:</h1>
+        <h1 style={{color:"#f2cc8f"}}>Upload Products:</h1>
 
-        <Form className="mt-3">
+        <Form className="mt-3" style={{color:"white"}}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Student Name</Form.Label>
             <Form.Control

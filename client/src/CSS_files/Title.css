@@ -39,7 +39,9 @@
 .animation {
         display: flex;
 }
-
+.writing{
+        color: white;
+}
 .animation-left,
 .animation-right {
         width: 30%;
