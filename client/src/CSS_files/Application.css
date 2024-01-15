@@ -1,25 +1,28 @@
+/* Resetting some default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensuring a box-sizing border-box model for easier layout */
+* {
+    box-sizing: border-box;
+}
+
 .custom-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    max-width: 1200px; /* Set a maximum width for your container */
+    margin: 0 auto; /* Center the container on the page */
 }
+
 .custom-arrow-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-/* body{
-        background: #85b0ca;
-background: radial-gradient(circle, #457b9d 35%, rgb(1, 1, 2) 99%, rgb(55, 152, 172) 100%);
-} */
-.left {
-    align-items: flex-start;
-}
-
-.right {
-    align-items: flex-end;
+    /* align-items: center; Remove or adjust this line */
 }
 
 .custom-arrow {
@@ -28,11 +31,6 @@ background: radial-gradient(circle, #457b9d 35%, rgb(1, 1, 2) 99%, rgb(55, 152, 
 
 .custom-content {
     flex: 3;
-}
-
-.apply-image {
-    width: 30rem;
-    height: 30rem;
 }
 
 .typed-content {
@@ -44,6 +42,7 @@ background: radial-gradient(circle, #457b9d 35%, rgb(1, 1, 2) 99%, rgb(55, 152, 
     margin-top: 5px;
 }
 
+/* Media queries for responsiveness */
 @media screen and (max-width: 1020px) {
     .typed-content {
         font-size: 26px;
