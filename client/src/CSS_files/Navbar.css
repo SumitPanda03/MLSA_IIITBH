@@ -1,9 +1,9 @@
 .nav-design {
-        background: linear-gradient(to left, #4b6cb7, #182848);
+        background: linear-gradient(to left, #47608f, #000000);
 }
 
 .nav-design:hover {
-        background: linear-gradient(to right, #4b6cb7, #182848);
+        background: linear-gradient(to right, #47608f, #000000);
 }
 
 .link-text {

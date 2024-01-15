@@ -16,7 +16,7 @@
   top: 0;
   left: 50%;
   margin-left: -2px;
-  border-right: 4px dotted #4b546f;
+  border-right: 4px dotted #5f9ce2;
   height: 100%;
   display: block;
 }
@@ -33,7 +33,7 @@
   top: 15px;
   text-align: right;
   margin-right: 20px;
-  color: #4b6cb7;
+  color: #e6ae47;
   font-size: 2.5rem;
 }
 
