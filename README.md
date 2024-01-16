@@ -1,5 +1,5 @@
 **Microsoft Learn Student Ambassador** Website: `IIIT BHUBANESWAR` <br/><br/>
-`Created by:`
+`Project Manitainers:`
 <ul>
   <li>Rajnish Kumar Singh</li>
   <li>Sumit Bhusan Panda</li>
