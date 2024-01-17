@@ -49,7 +49,7 @@ function Zero() {
     cursor: "pointer",
     transition: "transform 0.2s, color 0.2s, box-shadow 0.2s, opacity 1s", // Added opacity transition
     fontWeight: "bold",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // Box shadow when not hovered
+    // boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // Box shadow when not hovered
     opacity: showButton ? 2 : 0, // Initial opacity
     boxShadow: "4px 8px 8px rgba(255, 255, 0, 0.2)",
   };
