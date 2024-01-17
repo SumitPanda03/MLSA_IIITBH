@@ -29,6 +29,8 @@ background: radial-gradient(circle, #457b9d 35%, rgb(1, 1, 2) 99%, rgb(55, 152, 
 }
 
 .custom-content {
+    margin-left: 15px;
+    margin-right: 15px;
     flex: 3;
 }
 
