@@ -24,7 +24,7 @@ function Milestones() {
       <div className="container">
         <div className="timeline">
           <div className="timeline-row">
-            <div className="timeline-time">NEW MLSA</div>
+            <div className="timeline-time mt-4">NEW MLSA</div>
 
             <div className="timeline-content">
               <img
