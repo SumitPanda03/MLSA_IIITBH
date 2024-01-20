@@ -40,7 +40,7 @@ function Application() {
           <br />
           <button
             type="button"
-            className="btn btn-secondary btn-lg btn-block my-3"
+            className="btn btn-secondary btn-lg btn-block my-3 btns"
           >
             Eligibility Criteria
           </button>
@@ -70,7 +70,7 @@ function Application() {
             </li>
           </ol>
           <br />
-          <button type="button" className="btn btn-secondary btn-lg btn-block">
+          <button type="button" className="btn btn-secondary btn-lg btn-block btns">
             Application
           </button>
           <br />
