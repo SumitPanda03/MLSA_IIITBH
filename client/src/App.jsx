@@ -10,8 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Opening from "./pages/Opening.js";
 // import Upload from "./pages/Upload.js";
 import { AuthWrapper } from "./auth/AuthWrapper.jsx";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from '@vercel/analytics/react';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 
 function App() {
   return (
@@ -28,8 +27,8 @@ function App() {
         </Routes> */}
         <AuthWrapper/>
       </BrowserRouter>
-      <SpeedInsights/>
-      <Analytics />
+      injectSpeedInsights();
+
 
     </div>
   );
