@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Opening from "./pages/Opening.js";
 // import Upload from "./pages/Upload.js";
 import { AuthWrapper } from "./auth/AuthWrapper.jsx";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
   return (
