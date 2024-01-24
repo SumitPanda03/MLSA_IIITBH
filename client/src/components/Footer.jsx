@@ -5,7 +5,10 @@ export default function Footer() {
   return (
     <div>
       <div className="text-white pb-3 pt-3 text-align-center text-center footer-design">
-        <b>Copyright &copy; MLSA Chapter @ IIIT Bhubaneswar</b>
+        <b>
+          Copyright &copy; 2024 | MLSA Chapter | IIIT Bhubaneswar | All Rights
+          Reserved
+        </b>
       </div>
     </div>
   );
