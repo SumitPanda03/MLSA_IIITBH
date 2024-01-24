@@ -135,7 +135,7 @@ export default function Projects() {
   return (
     <div>
       <Navbar />
-      <h1 className="typed-content container my-5">
+      <h1 className="typed-content container ">
         <span ref={el} />
       </h1>
       <br />
