@@ -9,6 +9,19 @@
         justify-content: center;
         margin-top: 1%;
 }
+.loading-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        color: rgb(185, 163, 62); 
+        font-size: 400%;
+        margin-top: 25rem;
+    }
+
+    .spinner-border {
+        color: rgb(247, 237, 192); /* Set your desired spinner color */
+    }
 
 .description {
         margin-top: 35px;
