@@ -16,5 +16,4 @@ MLSA IIIT Chapter opens doors to a vibrant community of like-minded individuals,
   <li>FrontEnd: Vite + ReactJS </li>
   <li>Backend: Node.js, Express.js </li>
   <li>Database: MongoDB, Amazon AWS </li>
-  <li>Hosted On: .onrender</li>
 </ul>
