@@ -116,13 +116,6 @@ const Upload = () => {
   };
   return (
     <>
-      {/* <nav class="navbar sticky-top navbar-expand-lg navbar-dark transparent-navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand " href="#">
-            WELCOME TO UPLOAD PAGE
-          </a>
-        </div>
-      </nav> */}
       <Navbar />
       <div className="container my-5">
         <br />
