@@ -53,7 +53,7 @@ router.post("/register", upload.single("photo1"), async (req, res) => {
     else if (status === "Beta") finalLink = betaLink;
     else finalLink
 
-    // const url1 = await uploadURL(file);
+    const url1 = await uploadURL(file);
     const url = `https://s3.${s3Region}.amazonaws.com/${bucketName}/uploads/${file.originalname}`;
 
     // console.log("URL", url1);
