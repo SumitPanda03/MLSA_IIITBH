@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useRef, useState , useMemo} from "react";
+import { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 import "../CSS_files/Chapter.css";
 import "../CSS_files/Carousel.css";
@@ -44,7 +44,7 @@ export default function Projects() {
 
 
 
-  const cardsData = useMemo(() => {data.length > 0
+  const cardsData = data.length > 0
   ? data.map((el) => ({
       title: el.username,
       imageUrlFront: el.imgfront,
@@ -103,7 +103,7 @@ export default function Projects() {
         </div>
       )
     }))
-  : [];},[data])
+  : [];
 
   
 
