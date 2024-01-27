@@ -44,7 +44,7 @@ export default function Projects() {
             typed.destroy();
         };
     }, []);
-
+    
     useEffect(() => {
       // Fetch data after the carousel is initially rendered
       getUserData();
@@ -158,36 +158,26 @@ export default function Projects() {
     );
 
     return (
-    <div>
-        <Navbar />
-        <h1 className="typed-content container ">
-            <span ref={el} />
-        </h1>
-        <br />
-        <div className="app">
-            <Carousel />
-        </div>
-        {data !== null && (
+        <div>
+            <Navbar />
+            <h1 className="typed-content container ">
+                <span ref={el} />
+            </h1>
+            <br />
             <div className="app">
-                {data.length > 0 ? (
-                    <Carousel>
-                        {cardsData.map((card, i) => (
-                            <Card
-                                key={i}
-                                title={card.title}
-                                imageUrlFront={card.imageUrlFront}
-                                imageUrlBack={card.imageUrlBack}
-                                description={card.description}
-                            />
-                        ))}
-                    </Carousel>
-                ) : (
-                    <p>No data available.</p>
-                )}
+                <Carousel>
+                    {cardsData.map((card, i) => (
+                        <Card
+                            key={i}
+                            title={card.title}
+                            imageUrlFront={card.imageUrlFront}
+                            imageUrlBack={card.imageUrlBack}
+                            description={card.description}
+                        />
+                    ))}
+                </Carousel>
             </div>
-        )}
-        <Footer />
-    </div>
-);
-
+            <Footer />
+        </div>
+    );
 }
