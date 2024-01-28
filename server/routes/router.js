@@ -29,12 +29,14 @@ const goldLink =
 // product upload
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
+const bucketName = process.env.bucketName;
+const s3Region =process.env.region;
 let finalLink;
 router.post("/register", upload.single("photo1"), async (req, res) => {
     // console.log("req files", req.file);
-    console.log("req body", req.body);
+    // console.log("req body", req.body);
     const file = req.file;
-    console.log(file);
+    // console.log(file);
     const { username, clgid, branch, gh, li, ig, mail, status } = req.body;
     // const Key = `images/${uuidv4()}.${file.originalname.split('.').pop()}`; // Generate a unique key for the S3 object
     // console.log("Image key = " ,Key);
@@ -52,7 +54,9 @@ router.post("/register", upload.single("photo1"), async (req, res) => {
     else finalLink
 
     const url1 = await uploadURL(file);
-    console.log("URL", url1);
+    const url = `https://s3.${s3Region}.amazonaws.com/${bucketName}/uploads/${file.originalname}`;
+
+    // console.log("URL", url1);
     try {
         const date = moment(new Date()).format("YYYY-MM-DD");
         const userData = new users({
@@ -63,11 +67,11 @@ router.post("/register", upload.single("photo1"), async (req, res) => {
             li: li,
             ig: ig,
             mail: mail,
-            imgfront: url1,
+            imgfront: url,
             imgback: finalLink,
             date: date,
         });
-        console.log("USer Data", userData);
+        // console.log("USer Data", userData);
         const finalData = await userData.save();
         res.status(201).json({ status: 201, finalData });
     } catch (error) {
@@ -80,7 +84,7 @@ router.post("/register", upload.single("photo1"), async (req, res) => {
 
 router.get("/getdata", async (req, res) => {
     try {
-        const getUser = await users.find().sort({ date: -1 });
+        const getUser = await users.find().sort({ date: 1 });
         res.status(201).json({ status: 201, getUser });
         // console.log(getUser);
     } catch (error) {

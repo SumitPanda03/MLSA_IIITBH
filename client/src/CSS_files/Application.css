@@ -90,6 +90,10 @@ background: radial-gradient(circle, #457b9d 35%, rgb(1, 1, 2) 99%, rgb(55, 152, 
     .typed-content {
         font-size: 16px;
     }
+    .btns{
+        margin: auto;
+        width: 70vw;
+    }
 }
 
 @media screen and (max-width: 360px) {

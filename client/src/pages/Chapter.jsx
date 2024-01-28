@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 import "../CSS_files/Chapter.css";
 import "../CSS_files/Carousel.css";
@@ -8,12 +7,12 @@ import Navbar from "../components/Navbar.jsx";
 import Carousel from "../components/Carousel.jsx";
 import { VscGithub, VscMail } from "react-icons/vsc";
 import { FaInstagram, FaLinkedin } from "react-icons/fa6";
-// import { FaTwitter } from "react-icons/fa";
 import axios from "axios";
 
 export default function Projects() {
   const el = useRef(null);
   const [data, setData] = useState([]);
+  const [showDetails, setShowDetails] = useState(false);
 
   const getUserData = async () => {
     const res = await axios.get("https://mlsa-backend.onrender.com/uploads/getdata", {
@@ -42,72 +41,62 @@ export default function Projects() {
     };
   }, []);
 
+  useEffect(() => {
+    // Show details after 3 seconds
+    const timeoutId = setTimeout(() => {
+      setShowDetails(true);
+    }, 3000);
 
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
 
   const cardsData = data.length > 0
-  ? data.map((el) => ({
-      title: el.username,
-      imageUrlFront: el.imgfront,
-      imageUrlBack: el.imgback,
-      description: (
-        <div className="description">
-          <ul>
-            <li>
-              <strong className="bold-black">ID:</strong>{" "}
-              <span className="list-content">{el.clgid}
-              </span>
-            </li>
-            <li style={{ marginTop: "10px" }}>
-              <strong className="bold-black">Branch:</strong>{" "}
-              <span className="list-content">{el.branch}</span>
-            </li>
-            <div className="social">
-              <li style={{ marginTop: "10px" }}>
-                <strong className="bold-black"> Socials : </strong>
+    ? data.map((el) => ({
+        title: el.username,
+        imageUrlFront: el.imgfront,
+        imageUrlBack: el.imgback,
+        description: (
+          <div className="description">
+            <ul>
+              <li>
+                <strong className="bold-black">ID:</strong>{" "}
+                <span className="list-content">{el.clgid}</span>
               </li>
-              &nbsp;&nbsp;
-              <a
-                href={el.gh}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <VscGithub />{" "}
-              </a>
-              &nbsp;
-              <a
-                href={el.ig}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram />{" "}
-              </a>
-              &nbsp;
-              <a
-                href={el.li}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin />{" "}
-              </a>
-              &nbsp;
-              <a
-                href={el.mail}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <VscMail />
-              </a>
-              &nbsp;
-            </div>
-          </ul>
-        </div>
-      )
-    }))
-  : [];
+              <li style={{ marginTop: "10px" }}>
+                <strong className="bold-black">Branch:</strong>{" "}
+                <span className="list-content">{el.branch}</span>
+              </li>
+              <div className="social">
+                <li style={{ marginTop: "10px" }}>
+                  <strong className="bold-black"> Socials : </strong>
+                </li>
+                &nbsp;&nbsp;
+                <a href={el.gh} target="_blank" rel="noopener noreferrer">
+                  <VscGithub />{" "}
+                </a>
+                &nbsp;
+                <a href={el.ig} target="_blank" rel="noopener noreferrer">
+                  <FaInstagram />{" "}
+                </a>
+                &nbsp;
+                <a href={el.li} target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin />{" "}
+                </a>
+                &nbsp;
+                <a href={el.mail} target="_blank" rel="noopener noreferrer">
+                  <VscMail />
+                </a>
+                &nbsp;
+              </div>
+            </ul>
+          </div>
+        ),
+      }))
+    : [];
 
-  
-
-  const Card = ({ title, imageUrlFront, imageUrlBack, description }) => {
+  const Card = React.memo(({ title, imageUrlFront, imageUrlBack, description }) => {
     const [isFlipped, setIsFlipped] = useState(false);
 
     return (
@@ -123,19 +112,21 @@ export default function Projects() {
               <h2>{title}</h2>
             </div>
           </div>
-          <div className="card-back">
-            <img className="uniform-image" src={imageUrlBack} alt={title} loading="lazy" />
-            {description}
-          </div>
+          {showDetails && (
+            <div className="card-back">
+              <img className="uniform-image" src={imageUrlBack} alt={title} loading="lazy" />
+              {description}
+            </div>
+          )}
         </div>
       </div>
     );
-  };
+  });
 
   return (
     <div>
       <Navbar />
-      <h1 className="typed-content container my-5">
+      <h1 className="typed-content container ">
         <span ref={el} />
       </h1>
       <br />

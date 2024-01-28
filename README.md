@@ -4,7 +4,7 @@
 <a href="https://github.com/rks-031/" style="text-decoration: none;">`Rajnish Kumar Singh`</a> <br/>
 <a href="https://github.com/kundu-baivab" style="text-decoration: none;">`Baivab Kundu`</a> <br/>
 
-Website Link: Loading...
+Website Link: https://mlsa-iiitbh.vercel.app
 <br/>
 <br/>
 
@@ -16,5 +16,4 @@ MLSA IIIT Chapter opens doors to a vibrant community of like-minded individuals,
   <li>FrontEnd: Vite + ReactJS </li>
   <li>Backend: Node.js, Express.js </li>
   <li>Database: MongoDB, Amazon AWS </li>
-  <li>Hosted On: .onrender</li>
 </ul>

@@ -116,18 +116,11 @@ const Upload = () => {
   };
   return (
     <>
-      {/* <nav class="navbar sticky-top navbar-expand-lg navbar-dark transparent-navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand " href="#">
-            WELCOME TO UPLOAD PAGE
-          </a>
-        </div>
-      </nav> */}
       <Navbar />
       <div className="container my-5">
         <br />
         <br />
-        <h1 style={{color:"#f2cc8f"}}>Upload Products:</h1>
+        <h1 style={{color:"#f2cc8f"}}>Upload Member Info:</h1>
 
         <Form className="mt-3" style={{color:"white"}}>
           <Form.Group className="mb-3" controlId="formBasicEmail">

@@ -37,10 +37,8 @@ const s3Client = new S3Client({
 // }
 
 function getObjectURL(key) {
-    // Replace "mlsa.bucket" with your actual S3 bucket name
     const bucketName = process.env.bucketName;
 
-    // Replace "your-s3-region" with your actual AWS S3 region
     const s3Region =process.env.region;
 
     // Construct the public URL
@@ -49,7 +47,7 @@ function getObjectURL(key) {
     return url;
 }
 
-console.log("URL S3", getObjectURL("image-1698501542310.LevelAlpha.png"));
+// console.log("URL S3", getObjectURL("image-1698501542310.LevelAlpha.png"));
 
 async function putObject(filename, contentType, url1) {
     // Replace "mlsa.bucket" with your actual S3 bucket name
@@ -92,7 +90,7 @@ const uploadURL = async (url1) => {
             // yourFileStream,
             url1
         );
-        console.log("File uploaded successfully. Public URL:", urlImage);
+        // console.log("File uploaded successfully. Public URL:", urlImage);
         return urlImage;
     } catch (error) {
         console.error("Error uploading file:", error);
