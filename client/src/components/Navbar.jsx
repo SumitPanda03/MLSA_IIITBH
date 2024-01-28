@@ -8,7 +8,7 @@ function Navbar() {
   const { user } = AuthData();
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light nav-design fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav-design fixed-top">
         <Link to="/home" className="navbar-brand mx-3">
           <img
             src={logoImage}

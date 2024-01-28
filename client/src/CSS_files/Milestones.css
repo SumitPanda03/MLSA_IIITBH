@@ -95,8 +95,10 @@
   text-align: left;
 }
 
+
 .timeline-row .timeline-content ul {
-  text-align: left;
+  margin-left: 5%;
+  margin-right: auto;
 }
 
 .timeline-row .timeline-content i {
@@ -235,6 +237,3 @@
   }
 }
 
-.beta-list {
-  text-align: left;
-}
