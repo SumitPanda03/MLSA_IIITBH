@@ -132,18 +132,26 @@ function Milestones() {
                 Student Ambassadors who plan and host an event for other
                 students in their community will earn the Beta badge.
               </p>
-              <ul className="beta-list">
+              <ul>
                 <li>
-                  <strong style={{ color: "#e4d08f" }}>Alpha benefits</strong>
+                  <strong style={{ color: "#e4d08f" }}>
+                    Alpha benefits
+                  </strong>
                 </li>
                 <li>
-                  <strong style={{ color: "#e4d08f" }}>Swag</strong>
+                  <strong style={{ color: "#e4d08f" }}>
+                    Swag
+                  </strong>
                 </li>
                 <li>
-                  <strong style={{ color: "#e4d08f" }}>Event support</strong>
+                  <strong style={{ color: "#e4d08f" }}>
+                    Event support
+                  </strong>
                 </li>
                 <li>
-                  <strong style={{ color: "#e4d08f" }}>Mentorship</strong>
+                  <strong style={{ color: "#e4d08f" }}>
+                    Mentorship   
+                  </strong>
                 </li>
               </ul>
               <div className="thumbs">
