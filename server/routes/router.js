@@ -84,7 +84,7 @@ router.post("/register", upload.single("photo1"), async (req, res) => {
 
 router.get("/getdata", async (req, res) => {
     try {
-        const getUser = await users.find().sort({ date: -1 });
+        const getUser = await users.find().sort({ date: 1 });
         res.status(201).json({ status: 201, getUser });
         // console.log(getUser);
     } catch (error) {
