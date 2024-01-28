@@ -11,8 +11,6 @@ Website Link: Loading...
 MLSA IIIT Chapter opens doors to a vibrant community of like-minded individuals, mentors, and professionals. <br/> It offers a unique environment where students can learn, grow, and develop their technical expertise. The chapter also sponsors various technology-related events and initiatives organized by its members, further fostering a culture of learning and sharing.
 <br/><br/>
 
-**Documentation of the website** : https://shorturl.at/ilFLN
-
 # Tech Stack:
 <ul>
   <li>FrontEnd: Vite + ReactJS </li>
