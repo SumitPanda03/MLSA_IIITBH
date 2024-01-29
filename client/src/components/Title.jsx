@@ -18,7 +18,9 @@ function Title() {
             alt="iiit_logo"
           />
           <br />
-          <h1 style={{ color: "#f2cc8f" }}>Microsoft Learn Student Ambassadors</h1>
+          <h1 style={{ color: "#f2cc8f" }}>
+            Microsoft Learn Student Ambassadors
+          </h1>
           <h3 style={{ color: "#f2cc8f" }}>@</h3>
           <h1 style={{ color: "#f2cc8f" }}>IIIT Bhubaneswar</h1>
           <img
@@ -70,12 +72,12 @@ function Title() {
             events!
             <br />
             <br />
-            <strong style={{ color: "#f2cc8f" }}>MLSA @ IIIT BBSR</strong>{" "}
-            serves as a hub for students at IIIT who are passionate about
-            technology and want to make a positive impact on their community.
-            The chapter provides a platform for students to come together,
-            collaborate, and work towards a common goal of enhancing their
-            technical skills while also giving back to the community.
+            <strong style={{ color: "#f2cc8f" }}>MLSA @ IIIT-Bh</strong> serves
+            as a hub for students at IIIT who are passionate about technology
+            and want to make a positive impact on their community. The chapter
+            provides a platform for students to come together, collaborate, and
+            work towards a common goal of enhancing their technical skills while
+            also giving back to the community.
             <br />
             <br />
             Furthermore, being a part of the{" "}
