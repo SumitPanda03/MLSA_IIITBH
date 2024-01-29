@@ -8,8 +8,6 @@
   --card-size2: 35rem;
   --card-size3: 28rem;
   --card-size4: 31rem;
-
-
 }
 
 .page {
@@ -32,6 +30,9 @@
   height: var(--card-size);
   perspective: 500px;
   transform-style: preserve-3d;
+  padding: 10px;
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .card-container {
@@ -93,7 +94,6 @@
   right: 0;
   transform: translateX(100%) translateY(-50%);
 }
-
 
 
 @media screen and (max-width: 256px) {
