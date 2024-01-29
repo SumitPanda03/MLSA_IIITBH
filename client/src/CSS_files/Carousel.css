@@ -8,8 +8,6 @@
   --card-size2: 35rem;
   --card-size3: 28rem;
   --card-size4: 31rem;
-
-
 }
 
 .page {
@@ -96,7 +94,6 @@
   right: 0;
   transform: translateX(100%) translateY(-50%);
 }
-
 
 
 @media screen and (max-width: 256px) {
