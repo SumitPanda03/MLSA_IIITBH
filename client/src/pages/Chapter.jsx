@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 import "../CSS_files/Chapter.css";
 import "../CSS_files/Carousel.css";
+import repeat from "../images/repeat.png"
 import Footer from "../components/Footer.jsx";
 import Navbar from "../components/Navbar.jsx";
 import Carousel from "../components/Carousel.jsx";
@@ -122,6 +123,11 @@ export default function Projects() {
             <div className="title">
               <h2>{title}</h2>
             </div>
+            <img
+              src={repeat}
+              alt="MLSA: IIIT-Bh Chapter"
+              style={{ height: "20px", width: "20px" }}
+            />
           </div>
           <div className="card-back">
             <img className="uniform-image" src={imageUrlBack} alt={title} loading="lazy" />
