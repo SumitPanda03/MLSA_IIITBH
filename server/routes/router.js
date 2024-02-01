@@ -15,18 +15,11 @@ const { Upload } = require("@aws-sdk/lib-storage");
 const fs = require("fs");
 
 // img storage path
-const newLink =
-    "https://s3.ap-south-1.amazonaws.com/mlsa.bucket/uploads/LevelNew.png";
+const newLink =process.env.newLink;
+const alphaLink =process.env.alphaLink
+const betaLink =process.env.betaLink
+const goldLink =process.env.goldLink
 
-const alphaLink =
-    "https://s3.ap-south-1.amazonaws.com/mlsa.bucket/uploads/image-1698501542310.LevelAlpha.png";
-
-const betaLink =
-    "https://s3.ap-south-1.amazonaws.com/mlsa.bucket/uploads/image-1698592352371.LevelBeta.png";
-
-const goldLink =
-    "https://s3.ap-south-1.amazonaws.com/mlsa.bucket/uploads/LevelGold.png";
-// product upload
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 const bucketName = process.env.bucketName;
