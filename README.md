@@ -8,7 +8,13 @@ Website Link: https://mlsa-iiitbh.vercel.app
 <br/>
 <br/>
 
-MLSA IIIT Chapter opens doors to a vibrant community of like-minded individuals, mentors, and professionals. <br/> It offers a unique environment where students can learn, grow, and develop their technical expertise. The chapter also sponsors various technology-related events and initiatives organized by its members, further fostering a culture of learning and sharing.
+# Website Workflow
+https://github.com/SumitPanda03/MLSA_IIITBH/assets/103258259/96830695-d46d-4a12-b685-bed490d3c1ba
+
+
+MLSA @ IIIT-Bh serves as a hub for students at IIIT who are passionate about technology and want to make a positive impact on their community. The chapter provides a platform for students to come together, collaborate, and work towards a common goal of enhancing their technical skills while also giving back to the community.
+
+Furthermore, being a part of the MLSA IIIT Chapter opens doors to a vibrant community of like-minded individuals,mentors, and professionals. It offers a unique environment where students can learn, grow, and develop their technical expertise. The chapter also sponsors various  technology-related events and initiatives organized by its members, further fostering a culture of learning and sharing.
 <br/><br/>
 
 # Tech Stack:
