@@ -13,7 +13,7 @@ function Title() {
       <div className="home-container container">
         <div className="text-center mt-5">
           <img
-            src="./assets/Zero-page/iiit_logo.png"
+            src="./assets/Zero-page/iiit-logo.png"
             className="title-logo"
             alt="iiit_logo"
           />
